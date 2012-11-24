@@ -4,9 +4,6 @@ HTTPRequestHelper
 Make it easy to use NSURLConnection to do get or post http request.
 
 
-
-#How to use
-
 ##sample:
 
 	HTTPRequestHelper *client = [[HTTPRequestHelper alloc] initWithTarget:self
