@@ -54,7 +54,8 @@
 + (NSData *)prepareFormData:(NSData *)data key:(NSString *)key;
 + (NSString *)prepareParamsString:(NSDictionary *)params;
 + (NSString *)prepareUrl:(NSString *)url params:(NSDictionary *)params;
-
++ (NSURLRequest *)preparePostRequest:(NSString *)url params:(NSDictionary *)params
+                                data:(NSData *)jpeg dataKey:(NSString *)dataKey;
 
 
 

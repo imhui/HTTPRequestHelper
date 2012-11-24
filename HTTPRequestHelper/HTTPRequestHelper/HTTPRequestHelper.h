@@ -32,7 +32,6 @@
 - (void)post:(NSString *)url params:(NSDictionary *)params;
 - (void)post:(NSString *)url params:(NSDictionary *)params data:(NSData *)jpeg dataKey:(NSString *)dataKey;
 - (id)postSyncRequest:(NSString *)url params:(NSDictionary *)params data:(NSData *)jpeg dataKey:(NSString *)dataKey;
-+ (NSURLRequest *)preparePostRequest:(NSString *)url params:(NSDictionary *)params data:(NSData *)jpeg dataKey:(NSString *)dataKey;
 
 - (void)httpRequestDidFinishLoading:(NSString *)content;
 - (void)httpRequestDidFailWithError:(NSError *)error;

@@ -20,9 +20,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    NSDictionary *params = [NSDictionary dictionary];
     HTTPRequestHelper *client = [[HTTPRequestHelper alloc] initWithTarget:self selector:@selector(dataDidReceived:)];
-    [client get:@"http://www.google.com" params:[NSDictionary dictionary]];
+    [client get:@"http://www.google.com" params:params];
+//    [client post:@"http://www.google.com" params:params];
+//    [client post:@"http://www.google.com" params:params data:[NSData data] dataKey:@"data_key"];
     [client release];
+    
+    
     
 }
 
